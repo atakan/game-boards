@@ -215,8 +215,8 @@
 ;;; color the compartments
 
 (defun make-RSSR-map ()
-  (with-open-file (stream "deneme2.svg" :direction :output
-					:if-exists :supersede)
+  (with-open-file (stream "RSSR-map.svg" :direction :output
+					 :if-exists :supersede)
     (let ((*standard-output* stream))
       (svg-boilerplate)
       (with-svg (:w 4800 :h 3200 :title "Circles")
