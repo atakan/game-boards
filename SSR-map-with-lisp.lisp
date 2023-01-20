@@ -63,7 +63,8 @@
 
 ;;; a macro called defshape that allows defining a shape drawing function conveniently.
 ;;; this needs to be rewritten, a lot of the confusing pieces can actually
-;;; reside outside this macro.
+;;; reside outside this macro. Apperantly this is a common beginner's mistake
+;;; using macros where a function would do 
 (eval-when (:compile-toplevel)
   (defun add-supplied-p-to-arglist (styleargs)
     (loop for sa in styleargs
